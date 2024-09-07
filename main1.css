@@ -1,0 +1,746 @@
+* {
+    box-sizing: border-box;
+  } /* controls height/width of element - and correctly positions elements*/
+
+body {
+font-family:Arial, Helvetica, sans-serif; 
+background-color: #F7EBE8;}/*background colour for the whole site*/
+
+#wrapper{
+width: 100%; margin: 0 auto;
+}
+
+header{
+background-color: #F7EBE8; padding: 10px; 
+}
+
+#logo{
+float:left;
+height: 3%;
+width: 5%;
+top: 0;
+left: 0;
+}
+
+/* styling for the naviagtion bar*/
+nav.nav1{
+overflow: hidden;
+background-color:#F7EBE8;
+font-size: 80%;
+padding-left: 50%;
+/*padding-left: 40%;
+padding-right: 5%; */
+}
+
+nav.nav1 ul{
+list-style: none;
+width: 90%;
+padding : 5%;
+margin: 0;
+}
+
+nav.nav1 li{
+display: inline;
+border-right: 2px solid #F7EBE8;
+}
+
+nav.nav1 li:last-of-type {border-right: 0px;}
+
+nav.nav1 a{
+color: #27347E;
+text-align: center;
+text-decoration: none;
+padding: 25px 19px;
+font-size: 16px;
+transition-duration: 0.4s;
+}
+
+nav.nav1 a:hover{
+    box-shadow: 0 -5px 0px #1C2E67 inset, /*adds a shadow like border to the navigation bar when an link is hovered over*/
+    500px 0 0 #f7e7e7 inset;
+    padding: 20px 19px 30px 19px;
+}
+
+/*used for the hamburger menu - hidden out of sight for user as it is only to be used once the screen is in its desired size*/
+input#menu, label {
+    display: none;
+    position: absolute;
+    right: 20px;
+}
+
+
+#Globe{
+    position: relative;
+    padding: 70px;
+    padding-top: 65px;
+    padding-left: 135px;
+}
+
+#Globe img{
+    width: 35%;
+    height: auto;
+}
+
+.topSection h1{
+    text-align: right;
+	font-size: 58px;
+	color: #000000;
+    position: absolute;
+	right: 25%;
+	top: 25%;
+    clear: left;
+}
+
+ .topSection p{
+    text-align: left;
+    font-size: 16px;
+    color: #000000;
+    position: absolute;
+    right: 15%;
+    top: 45%;
+    width: 20%;
+    clear: left;
+}
+
+section{
+background-color:#F7EBE8;  overflow: auto; width: 100%; 
+}
+
+.column{
+    float: left;
+    padding: 5px;
+}
+
+/* styling of the columns - rounding corners, positoning it so there is gap between the elments that connect to the globe img*/
+.column.side{
+    border-radius: 0px 70px 0px 0px;
+    background-color: #27347E;
+    float: left;
+    width: 24%;
+    height: 650px;
+    padding-top: 90px;
+    padding-left: 45px;
+}
+
+.column.main{
+    border-radius: 70px 0px 0px 0px;
+    background-color: #27347E;
+    float: right;
+    width: 75%;
+    height: 650px;
+    font-size: 27px;
+    color:#FFFFFF;
+    word-spacing: 1px;
+}
+
+.column img{
+    position: relative;
+    width: 60%;
+    height: auto;
+    padding: 40px;
+    padding-top: 10%;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column aside { 
+    float:left; 
+    padding: 1%;
+    font-size: 35px;
+    color:#FFFFFF;
+    word-spacing: 1px;
+    }
+
+.stats{
+    float: right;
+    position:absolute;
+    padding-right: 45px;
+    font-size: 27px;
+    color: #FFFFFF;
+    word-spacing: 2px;
+    text-align: left;
+	left: 77%;
+	top: 90%;
+}
+
+.stats p{
+    font-size: 20px;
+    text-align: left;
+    color: #FFFFFF;
+    opacity: 0.5;
+    width: 250px;
+}
+
+
+#middleSection img{
+    padding-top: 20px;
+    width: 100%;
+    height: 60%;
+    object-fit: cover; /*makes sure that the image fits the screen exactly -width*/
+}
+
+/* styling of the div elements - content will align along each other rather than below each other*/
+.grid-containers{
+    display: inline-grid;
+    grid-template-columns: 350px 350px 350px; /* size of the div elements*/
+    grid-gap: 70px;
+    padding: 70px;
+    margin-left: 6%;
+    background-color:#F7EBE8;
+}
+
+.grid-containers > div {
+    background-color: #27347E;
+    text-align: center;
+    border-radius: 15%;
+    padding: 30px 0;
+    height: 500px;
+    text-transform: capitalize;
+}
+
+
+.grid-containers h5{
+    font-size: 25px;
+    color: #FFFFFF;
+    text-shadow: -2px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -2px #000000; /*adds a border to the text*/
+    font-family: monospace;
+}
+
+.grid-containers p{
+    font-size: 20px;
+    color:#FFFFFF;
+    font-family: monospace;
+    width: 240px;
+    text-align: left;
+    margin-left: 70px;
+}
+.bottomSection{
+    background-color: #011657;
+    object-fit: cover;
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.bottomSection h2{
+    font-size: 35px;
+    color: #FFFFFF;
+    text-align: center;
+    word-spacing: 3px;
+    text-transform: capitalize;
+}
+
+.bottomSection p{
+    font-size: 22px;
+    color: #FFFFFF;
+    width: 900px;
+    margin-left: 255px;
+}
+
+.bottomSection h5{
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-left: 255px;
+}
+/*styling of the button*/
+.button{
+	border: none;
+	color: #ffffff;
+	padding: 16px 32px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+    border: 4px solid #1C2E67;
+    border-radius: 21%; /* rounds the corners of the button*/
+	transition-duration: 0.4s;/*timescale for the effect (colour change when hovered over)*/
+	cursor: pointer; /*specifiys the type of cursor that will be displayed when the user clicks/hoveres over the button*/
+    margin-left: 255px;
+    
+}
+
+.button:hover{
+	background-color:#1C2E67;
+}
+
+footer{
+background-color: #F7EBE8;
+}
+
+.position{
+    padding-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;   
+}
+
+/* makes a column so the content can flow alongside each other*/
+.contacts-container::after{
+    content:"";
+    display:table;
+    clear: both;
+     
+ }
+
+.contacts{
+    float: left;
+    width: 50%;
+    padding: 20px;
+  }
+
+ h3{
+    color: #011657;
+    width: 60%;
+    padding-top: 20px;
+}
+
+/*styling of the email button - takes the user email and allows them to "submit" it*/
+input[type=email] {
+    width: 40%;
+    padding: 12px 15px;
+    background-color: #F7EBE8;
+    opacity: 1;
+    border-color: #FFFFFF;
+}
+
+input[type=submit]{
+    border: 2px solid #F7EBE8;
+    background-color:#FFFFFF;
+    opacity: 1;
+    text-align: center;
+    font-size: 14px;
+    padding: 13px;
+    width: 80px;
+}
+
+input[type=submit]:hover{
+    background-color:#d3d3d3;
+    border-color: #808080;
+}
+
+.contactsLink h4{
+    padding-top: 20px;
+    font-size: 18px;
+    margin-left: 41px;
+    color: #011657;
+}
+
+.contactsLink ul{
+    list-style: none;
+}
+
+.contactsLink li{
+    padding-top: 20px;
+    padding: 10px;
+}
+
+.contactsLink a{
+    color: #011657;
+    text-decoration: none; 
+    font-weight: bold; 
+    font-size: 16px; 
+}
+
+.contactsLink a:hover{
+    color: #E07D53;
+    text-decoration: underline;
+}
+
+.smallText{
+    display:flex;
+    margin-left: 70%;
+}
+
+.smallText > div{
+    color: #808080;
+    font-size: 12px;
+    font-weight: bold; 
+    padding: 10px;
+}
+
+
+
+  /* END OF MAIN STYLING */
+/* */
+/* Media Query Overide Mobile */
+/* Media Query Overide Mobile */
+/* styling is readjusted to make the design responsive and appropriate for its screen size*/
+@media only screen and (max-width:599px)
+{
+ header {
+    background-color: #F7EBE8;
+} 
+  
+
+#logo{
+    width: 15%;
+    }
+
+nav.nav1 li { 
+    width:100%; display:block; border-right: 0; min-height:44px;
+}
+
+/*hamburger menu styling - once the desktop is within the requirmnet this code will be executed so
+ the naviagtion bar goes from being across the top of the screen to a small image that will reveal 
+ the naviagtion bar links once clicked*/
+.collapsible-menu {
+    background-color: #F7EBE8;
+    padding: 0px 30px;
+   }
+   
+.collapsible-menu label {
+    font-size: 120%;
+    display: block;
+    cursor: pointer;
+    background: url(../graphics/menu.png) no-repeat left center; /*images used to display the hamburger menu icon*/
+    padding: 10px 0 10px 50px;
+}
+input:checked +label {
+    background-image: url(../graphics/close.png);
+
+}
+nav.nav1 {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 0 0 50px;
+}
+/* Toggle Effect */
+input:checked ~ label {
+    background-image: url(../graphics/close.png);
+}
+input:checked ~ nav.nav1 {
+    max-height: 100%;
+}
+    
+nav.nav1 a:hover{
+    box-shadow: 0 -5px 0px #1C2E67 inset,
+    500px 0 0 #f7e7e7 inset;
+    padding: 15px 150px 15px 150px;
+} 
+
+#Globe{
+    position: relative;
+    padding: 30px;
+    padding-top: 65px;
+    left: 0px;
+}
+
+#Globe img{
+    width: 48%;
+    height: auto;
+}
+
+.topSection h1{
+    text-align: right;
+	font-size: 28px;
+	color: #000000;
+    position: relative;
+	top: -220px;
+	right: 10px;
+    clear: left;
+}
+
+.topSection p{
+    text-align: left;
+    font-size: 16px;
+    color: #000000;
+    position: relative;
+    right: -255px;
+    top: -230px;
+    width: 210px;
+    clear: left;
+}
+
+.column.side{
+    border-radius: 0px 0px 0px 0px;
+    background-color: #F7EBE8;
+    width: 24%;
+    height: 150px;
+    padding: 10px;
+}
+
+.column aside {  
+    font-size: 22px;
+    color: #27347E;
+    word-spacing: 2px;
+    text-align: center;
+    }
+
+.column.main{
+    border-radius: 0px 0px 0px 0px;
+    background-color: #27347E;
+    float: right;
+    width: 75%;
+    height: 600px;
+    font-size: 27px;
+    color:#FFFFFF;
+    word-spacing: 1px;
+}
+
+.column img{
+    display: none;
+
+}
+
+.stats{
+    position: absolute;
+    font-size: 22px;
+    color: #FFFFFF;
+    word-spacing: 2px;
+    text-align: left;
+    top: 770px;
+    left: 103px;
+}
+
+.stats p{
+    font-size: 20px;
+    text-align: left;
+    color: #FFFFFF;
+    opacity: 0.5;
+    width: 250px;
+}
+.column.side, .column.main {
+    width: 100%;
+}
+
+.grid-containers{
+    grid-template-columns: 350px; /*only allows one div element to display it self on the line - next div elemnt will go below it*/
+    grid-gap: 50px;
+    padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.grid-containers > div {
+    padding: 30px 0;
+    height: 400px;
+}
+
+
+.grid-containers h5{
+    font-size: 22px;
+}
+
+.grid-containers p{
+    font-size: 18px;
+}
+
+.bottomSection{
+    padding: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.bottomSection h2{
+    font-size: 22px;
+    width: 300px;
+    margin-left: 5px;
+}
+
+.bottomSection p{
+    padding-top: 20px;
+    font-size: 18px;
+    color: #FFFFFF;
+    width: 250px;
+    margin-left: 30px;
+   
+}
+
+.bottomSection h5{
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-left: 30px;
+    width: 250px;
+}
+
+.button{
+	padding: 16px 28px;
+    margin-left: 30px;
+}
+
+.position{
+    padding-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;   
+}
+
+.contacts-container::after{
+    content:"";
+    display:table;
+    clear: both;
+     
+ }
+
+.contacts{
+    width: 450px;
+  }
+
+ h3{
+    font-size: 20px;
+    width: 80%;
+}
+
+input[type=email] {
+    width: 40%;
+    padding: 12px 15px;
+    background-color: #F7EBE8;
+    opacity: 1;
+    border-color: #FFFFFF;
+}
+
+.contactsLink h4{
+    padding-top: 10px;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.smallText{
+    display:flex;
+    margin-left: 10%;
+}
+}
+/* overrides css for mobile views up to 599px wide */
+/* END OF MOBILE OVERIDE STYLING */ 
+/* */
+/* Media Query Overide Tablet */
+/* Media Query Overide Tablet */
+@media only screen and (min-width:600px) and (max-width:1199px) 
+{
+ header{background-color: #F7EBE8;}
+
+ nav.nav1{
+    overflow: hidden;
+    background-color:#F7EBE8;
+    font-size: 60%;
+    padding-left: 15%;
+ }  
+
+#Globe img{
+    width: 48%;
+    height: auto;
+}
+
+.topSection h1{
+	font-size: 34px;
+	top: 230px;
+	right: 150px;
+}
+
+.topSection p{
+    font-size: 16px;
+    right: 55px;
+    top: 330px;
+    width: 290px;
+}
+
+.column.side{
+    width: 34%;
+}
+
+.column.main{
+    width: 65%;
+    font-size: 24px;
+    
+
+}
+
+.column img{
+    width: 65%;
+    height: auto;
+    padding: 30px;
+    padding-top: 30%;
+}
+
+.column aside { 
+    font-size: 30px;
+    }
+
+.stats{
+    float: right;
+    position:absolute;
+    padding-right: 45px;
+    font-size: 27px;
+    color: #FFFFFF;
+    word-spacing: 2px;
+    text-align: left;
+	left: 70%;
+	top: 75%;
+}
+
+.stats p{
+    font-size: 20px;
+    text-align: left;
+    color: #FFFFFF;
+    opacity: 0.5;
+    width: 250px;
+}
+/* reducing the size of the div elemts by reducing the text size and padding*/
+.grid-containers{
+    display: inline-grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 15px; /*reduce the gap between the elements so all thre can fit in one screen*/
+    padding: 10px;
+    margin-left: 0%;
+    background-color:#F7EBE8;
+}
+
+.grid-containers > div {
+    background-color: #27347E;
+    text-align: center;
+    border-radius: 15%;
+    padding: 10px 0;
+    height: 400px;
+    text-transform: capitalize;
+}
+
+
+.grid-containers h5{
+    font-size: 22px;
+    color: #FFFFFF;
+    text-shadow: -2px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -2px #000000;
+    font-family: monospace;
+}
+
+.grid-containers p{
+    font-size: 18px;
+    color:#FFFFFF;
+    font-family: monospace;
+    width: 200px;
+    text-align: left;
+    margin-left: 50px;
+}
+
+
+.bottomSection h2{
+    font-size: 28px;
+    width: 500px;
+    margin-left: 95px;
+}
+
+.bottomSection p{
+    padding-top: 20px;
+    font-size: 22px;
+    width: 650px;
+    margin-left: 90px;
+   
+}
+
+.bottomSection h5{
+    font-size: 24px;
+    margin-left: 90px;
+    width: 550px;
+}
+
+.button{
+	padding: 16px 28px;
+    margin-left: 90px;
+}
+
+}
+ 
+/* overrides css for tablet/small desktop views between 600px and 
+1199px wide */
+/* END OF TABLET OVERIDE MAIN STYLING */
+

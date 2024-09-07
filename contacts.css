@@ -1,0 +1,367 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+font-family:Arial, Helvetica, sans-serif; 
+background-color: #F7EBE8;}
+
+#wrapper{
+width: 100%; margin: 0 auto;
+}
+
+header{
+background-color: #F7EBE8; padding: 10px; 
+}
+
+#logo{
+float:left;
+height: 3%;
+width: 5%;
+top: 0;
+left: 0;
+}
+
+nav.nav1{
+overflow: hidden;
+background-color:#F7EBE8;
+font-size: 80%;
+padding-left: 50%;
+/*padding-left: 40%;
+padding-right: 5%; */
+}
+
+nav.nav1 ul{
+list-style: none;
+width: 90%;
+padding : 5%;
+margin: 0;
+}
+
+nav.nav1 li{
+display: inline;
+border-right: 2px solid #F7EBE8;
+}
+
+nav.nav1 li:last-of-type {border-right: 0px;}
+
+nav.nav1 a{
+color: #27347E;
+text-align: center;
+text-decoration: none;
+padding: 25px 19px;
+font-size: 16px;
+transition-duration: 0.4s;
+}
+
+nav.nav1 a:hover{
+    box-shadow: 0 -5px 0px #1C2E67 inset,
+    500px 0 0 #f7e7e7 inset;
+    padding: 20px 19px 30px 19px;
+}
+
+.form{
+    position: relative;
+    left: 20%;
+    background-color: #27347E;
+    width: 60%;
+    padding: 20px;
+}
+
+.form h2{
+    position: relative;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Fugaz One';
+    font-weight: bold;
+    color: #F7EBE8;
+}
+/* positioning the text by the form */
+input#menu, label {
+    display: none;
+    position: absolute;
+    right: 2px;
+}
+
+/*styles the input boxes for the form*/
+input[type=text],select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+/*styling for the submit button*/
+.form input[type=submit] {
+    background-color: #E07D53;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #252525;
+  }
+  
+  .row {
+    border-radius: 5px;
+    background-color: #27347E;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 90%;
+  }
+  
+  .col-name {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-enter {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+footer{
+    background-color: #F7EBE8;
+    }
+    
+    .position{
+        padding-top: 50px;
+        margin-left: 10%;
+        margin-right: 10%;   
+    }
+    
+    .contacts-container::after{
+        content:"";
+        display:table;
+        clear: both;
+         
+     }
+    
+    .contacts{
+        float: left;
+        width: 50%;
+        padding: 20px;
+      }
+    
+     h3{
+        color: #011657;
+        width: 60%;
+        padding-top: 20px;
+    }
+    
+    input[type=email] {
+        width: 40%;
+        padding: 12px 15px;
+        background-color: #F7EBE8;
+        opacity: 1;
+        border-color: #FFFFFF;
+    }
+    
+    input[type=submit]{
+        border: 2px solid #F7EBE8;
+        background-color:#FFFFFF;
+        opacity: 1;
+        text-align: center;
+        font-size: 14px;
+        padding: 13px;
+        width: 80px;
+    }
+    
+    input[type=submit]:hover{
+        background-color:#d3d3d3;
+        border-color: #808080;
+    }
+    
+    .contactsLink h4{
+        padding-top: 20px;
+        font-size: 18px;
+        margin-left: 41px;
+        color: #011657;
+    }
+    
+    .contactsLink ul{
+        list-style: none;
+    }
+    
+    .contactsLink li{
+        padding-top: 20px;
+        padding: 10px;
+    }
+    
+    .contactsLink a{
+        color: #011657;
+        text-decoration: none; 
+        font-weight: bold; 
+        font-size: 16px; 
+    }
+    
+    .contactsLink a:hover{
+        color: #E07D53;
+        text-decoration: underline;
+    }
+    
+    .smallText{
+        display:flex;
+        margin-left: 70%;
+    }
+    
+    .smallText > div{
+        color: #808080;
+        font-size: 12px;
+        font-weight: bold; 
+        padding: 10px;
+    }
+    
+    
+    
+      /* END OF MAIN STYLING */
+    /* */
+    /* Media Query Overide Mobile */
+    /* Media Query Overide Mobile */
+    @media only screen and (max-width:599px)
+    {
+     header {
+        background-color: #F7EBE8;
+    } 
+      
+    
+    #logo{
+        width: 15%;
+        }
+    
+    nav.nav1 li { 
+        width:100%; display:block; border-right: 0; min-height:44px;
+    }
+    
+    .collapsible-menu {
+        background-color: #F7EBE8;
+        padding: 0px 30px;
+       }
+       
+    .collapsible-menu label {
+        font-size: 120%;
+        display: block;
+        cursor: pointer;
+        background: url(../graphics/menu.png) no-repeat left center;
+        width: 20%;
+        padding: 10px 0 10px 50px;
+    }
+    input:checked +label {
+        background-image: url(../graphics/close.png);
+    
+    }
+    nav.nav1 {
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 0 0 50px;
+    }
+    /* Toggle Effect */
+    input:checked ~ label {
+        background-image: url(../graphics/close.png);
+    }
+    input:checked ~ nav.nav1 {
+        max-height: 100%;
+    }
+        
+    nav.nav1 a:hover{
+        box-shadow: 0 -5px 0px #1C2E67 inset,
+        500px 0 0 #f7e7e7 inset;
+        padding: 15px 150px;
+    }
+
+    .col-name, .col-enter, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+    .position{
+        padding-top: 50px;
+        margin-left: 10%;
+        margin-right: 10%;   
+    }
+    
+    .contacts-container::after{
+        content:"";
+        display:table;
+        clear: both;
+         
+     }
+    
+    .contacts{
+        width: 450px;
+      }
+    
+     h3{
+        font-size: 20px;
+        width: 80%;
+    }
+    
+    input[type=email] {
+        width: 40%;
+        padding: 12px 15px;
+        background-color: #F7EBE8;
+        opacity: 1;
+        border-color: #FFFFFF;
+    }
+    
+    .contactsLink h4{
+        padding-top: 10px;
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    
+    .smallText{
+        display:flex;
+        margin-left: 10%;
+    }
+
+    .col-name, .col-enter, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    }
+    /* overrides css for mobile views up to 599px wide */
+    /* END OF MOBILE OVERIDE STYLING */ 
+    /* */
+    /* Media Query Overide Tablet */
+    /* Media Query Overide Tablet */
+    @media only screen and (min-width:600px) and (max-width:1199px) 
+    {
+     header{background-color: #00ff00;}
+
+     nav.nav1{
+        overflow: hidden;
+        background-color:#F7EBE8;
+        font-size: 60%;
+        padding-left: 15%;
+     }  
+
+    .col-name, .col-enter input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    }
+    /* overrides css for tablet/small desktop views between 600px and 
+    1199px wide */
+    /* END OF TABLET OVERIDE MAIN STYLING */
+    
+    

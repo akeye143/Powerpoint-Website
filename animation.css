@@ -1,0 +1,696 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+font-family:Arial, Helvetica, sans-serif;
+background-color: #F7EBE8;}
+
+#wrapper{
+width: 100%; margin: 0 auto;
+}
+
+header{
+background-color: #F7EBE8; padding: 10px; 
+}
+
+#logo{
+float:left;
+height: 3%;
+width: 5%;
+top: 0;
+left: 0;
+}
+
+nav.nav1{
+overflow: hidden;
+background-color:#F7EBE8;
+font-size: 80%;
+padding-left: 50%;
+/*padding-left: 40%;
+padding-right: 5%; */
+}
+
+nav.nav1 ul{
+list-style: none;
+width: 90%;
+padding : 5%;
+margin: 0;
+}
+
+nav.nav1 li{
+display: inline;
+border-right: 2px solid #F7EBE8;
+}
+
+nav.nav1 li:last-of-type {border-right: 0px;}
+
+nav.nav1 a{
+color: #27347E;
+text-align: center;
+text-decoration: none;
+padding: 25px 19px;
+font-size: 16px;
+transition-duration: 0.4s;
+}
+
+nav.nav1 a:hover{
+    box-shadow: 0 -5px 0px #1C2E67 inset,
+    500px 0 0 #f7e7e7 inset;
+    padding: 20px 19px 30px 19px;
+}
+
+
+input#menu, label {
+    display: none;
+    position: absolute;
+    right: 20px;
+}
+/*styling for the heading - states the size positioning and colouring of it*/
+#gradient-bgd{
+    position: relative;
+    top: 10px;
+    left: 70px;
+    width: 90%;
+    height: 400px;
+    background-color:#27347E;
+    background-image: linear-gradient(180deg,#27347E, #F7EBE8);/*styles it be a gradient that flows from the dark blue and fades into the pages background colour*/
+    border-radius: 30px 30px 0 0;
+}
+
+/*animates the text on the header - makes the base for the animation to be applied to*/
+.animation-left{
+    position: relative;
+    top: 50px;
+    font-size: 32px;
+    text-align: justify;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+    width: 150px;
+    animation: mymove1 3s; /*provides the name which will be used later - 3s for the duration of the animation*/
+    animation-fill-mode: forwards;/*animation to move forwards - so text will slide across the page*/
+    animation-timing-function: ease; /*chose the ease method as it was the smoothest looking one*/
+
+}
+/*@keyframe is used to inform the code that the code inside will chnage from the current style into another style*/
+@keyframes mymove1 {
+    from {left:0px}/*start position*/
+    to {left: 200px;}/*end position*/
+}
+
+
+.animation-middle{
+    position: relative;
+    top: 50px;
+    font-size: 32px;
+    text-align: justify;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+    width: 150px;
+    animation: mymove2 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+
+}
+
+@keyframes mymove2 {
+    from {left:200px}
+    to {left: 400px;}
+}
+
+.animation-right{
+    position: relative;
+    top: 50px;
+    right:0;
+    font-size: 32px;
+    text-align: justify;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+    width: 150px;
+    animation: mymove3 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+
+}
+
+@keyframes mymove3 {
+    from {left:500px}
+    to {left: 700px;}/*different positions so the text all flows along each other but are still indented*/
+}
+h2{
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Fugaz One';
+    letter-spacing: 3px;
+    position: relative;
+    top: 55px;
+    text-align: center;
+}
+#mindmap{
+    position: relative;
+    left: 270px;
+    top: 135px;
+    width: 60%;
+    height: auto;
+}
+
+.grid-container{
+    display: grid;
+    justify-content: space-evenly;/*specifies that all elemnst in the div are to positioned evenly from top to bottom*/
+    grid-template-columns: 60px 60px 60px;
+    gap:350px;
+    position: relative;
+    top: -420px;
+}
+
+.grid-container >  div{
+    background-color: #F7EBE8;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 20px;
+    text-align: justify;
+    width: 100px;
+}
+
+.orange-bgd{
+    position: relative;
+    top: -300px;
+    background-color: #E07D53;
+    object-fit: cover;
+    padding: 70px;
+
+}
+
+.orange-bgd p{
+    font-size: 22px;
+    font-family: 'Goldman';
+    word-spacing: 2px;
+    color: #FFFFFF;
+    width: 75%;
+    margin-left: 150px;
+}
+
+.orange-bgd h4{
+    font-size: 28px;
+    font-family: 'Goldman';
+    word-spacing: 5px;
+    color: #FFFFFF;
+    width: 75%;
+    margin-left: 150px;
+}
+.interactive-presentation h4{
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: -250px;
+    
+}
+.grid-row{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 50px;
+    gap: 30px;
+    position: relative;
+    top: -250px;
+}
+
+.grid-column{
+    background-color: #F7EBE8;
+    padding: 20px;
+    height: 450px;
+    text-align: left;
+}
+
+
+.grid-column h5{
+    font-size: 17px;
+    font-weight: bold;
+    color:#E07D53;
+    margin: 0px;
+}
+
+.grid-column h3{
+    font-size: 32px;
+    font-weight: bold;
+    width: 650px; 
+    color:#000;
+    margin:0px;
+}
+
+.grid-column p{
+    font-size: 20px;
+}
+img{
+    width: 100%;
+    height:auto;
+}
+
+ul{
+    list-style-type: square;
+}
+
+.schedule{
+    position: relative;
+    top: -150px;
+    left: 1%;
+}
+
+.schedule h3{
+    font-size: 28px;
+    font-weight: bold;
+    color: #E07D53;
+    position: absolute;
+    top:-150px;
+    left: 20%;
+    text-align: center;s
+
+}
+
+table{
+    border-collapse: collapse; /* border collaspe inti a single border*/
+    width: 30%;
+}
+th, td{
+    border: 10px solid #011657; /*makes the boirder thick and visble */
+    padding: 30px;
+    text-align: center;
+}
+
+th:nth-child(even),td:nth-child(even) {
+    background-color: #FFFFFF;
+  }
+
+footer{
+    background-color: #F7EBE8;
+    }
+    
+.position{
+    padding-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;   
+}
+
+.contacts-container::after{
+    content:"";
+    display:table;
+    clear: both;
+        
+    }
+
+.contacts{
+    float: left;
+    width: 50%;
+    padding: 20px;
+    }
+
+h3{
+    color: #011657;
+    width: 60%;
+    padding-top: 20px;
+}
+
+input[type=email] {
+    width: 40%;
+    padding: 12px 15px;
+    background-color: #F7EBE8;
+    opacity: 1;
+    border-color: #FFFFFF;
+}
+
+input[type=submit]{
+    border: 2px solid #F7EBE8;
+    background-color:#FFFFFF;
+    opacity: 1;
+    text-align: center;
+    font-size: 14px;
+    padding: 13px;
+    width: 80px;
+}
+
+input[type=submit]:hover{
+    background-color:#d3d3d3;
+    border-color: #808080;
+}
+
+.contactsLink h4{
+    padding-top: 20px;
+    font-size: 18px;
+    margin-left: 41px;
+    color: #011657;
+}
+
+.contactsLink ul{
+    list-style: none;
+}
+
+.contactsLink li{
+    padding-top: 20px;
+    padding: 10px;
+}
+
+.contactsLink a{
+    color: #011657;
+    text-decoration: none; 
+    font-weight: bold; 
+    font-size: 16px; 
+}
+
+.contactsLink a:hover{
+    color: #E07D53;
+    text-decoration: underline;
+}
+
+.smallText{
+    display:flex;
+    margin-left: 70%;
+}
+
+.smallText > div{
+    color: #808080;
+    font-size: 12px;
+    font-weight: bold; 
+    padding: 10px;
+}
+
+
+
+    /* END OF MAIN STYLING */
+/* */
+/* Media Query Overide Mobile */
+/* Media Query Overide Mobile */
+@media only screen and (max-width:599px)
+{
+    header {
+    background-color: #F7EBE8;
+} 
+    
+
+#logo{
+    width: 15%;
+    }
+
+nav.nav1 li { 
+    width:100%; display:block; border-right: 0; min-height:44px;
+}
+
+.collapsible-menu {
+    background-color: #F7EBE8;
+    padding: 0px 30px;
+    }
+    
+.collapsible-menu label {
+    font-size: 120%;
+    display: block;
+    cursor: pointer;
+    background: url(../graphics/menu.png) no-repeat left center;
+    padding: 10px 0 10px 50px;
+}
+input:checked +label {
+    background-image: url(../graphics/close.png);
+
+}
+nav.nav1 {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 0 0 50px;
+}
+/* Toggle Effect */
+input:checked ~ label {
+    background-image: url(../graphics/close.png);
+}
+input:checked ~ nav.nav1 {
+    max-height: 100%;
+}
+    
+nav.nav1 a:hover{
+    box-shadow: 0 -5px 0px #1C2E67 inset,
+    500px 0 0 #f7e7e7 inset;
+    padding: 15px 150px 15px 150px;
+} 
+
+#gradient-bgd{
+    top: 50px;
+    left: 20px;
+    width: 90%;
+}
+
+.animation-left{
+    font-size: 22px;
+
+}
+/*screen is smaller so the psotioning of the text will need to chnaged and move a shorter distance as well*/
+@keyframes mymove1 {
+    from {left:0px}
+    to {left: 70px;}
+}
+
+.animation-middle{
+    font-size: 22px;
+    text-align: justify;
+}
+
+@keyframes mymove2 {
+    from {left:0px}
+    to {left: 150px;}
+}
+
+.animation-right{
+    font-size: 22px;
+    text-align: justify;
+}
+
+@keyframes mymove3 {
+    from {left:100px}
+    to {left: 250px;}
+}
+
+h2{
+    font-size: 22px;
+}
+
+#mindmap{
+    left: 30px;
+    top: 105px;
+    width: 100%;
+}
+
+.grid-container{
+    grid-template-columns: 30px 30px 30px;
+    gap:100px;
+    top: -220px;
+    left: -25px;
+}
+
+.grid-container >  div{
+    padding: 30px 0;
+    font-size: 16px;
+    width: 100px;
+    text-align: left;
+}
+
+.orange-bgd{
+    position: relative;
+    top: -200px;
+    background-color: #E07D53;
+    object-fit: cover;
+    padding: 30px;
+
+}
+
+.orange-bgd p{
+    font-size: 16px;
+    width: 75%;
+    margin-left: 70px;
+}
+
+.orange-bgd h4{
+    font-size: 22px;
+    width: 75%;
+    margin-left: 70px;
+}
+
+.interactive-presentation h4{
+    font-size: 26px;
+    text-align: center;
+    position: relative;
+    top: -200px;
+    
+}
+
+.grid-row{
+    grid-template-columns: auto;
+    padding: 30px;
+    gap: 10px;
+}
+
+.grid-column{
+    background-color: #F7EBE8;
+    padding: 10px;
+    height: 450px;
+    text-align: left;
+}
+
+.grid-column h5{
+    font-size: 16px;
+    font-weight: bold;
+    color:#E07D53;
+    margin: 0px;
+}
+
+.grid-column h3{
+    font-size: 24px;
+    font-weight: bold;
+    width: 350px; 
+    color:#000;
+    margin:0px;
+}
+
+.grid-column p{
+    font-size: 18px;
+}
+img{
+    width: 100%;
+    height:auto;
+}
+
+table{
+    border-collapse: collapse; /* border collaspe inti a single border*/
+    width: 20%;
+}
+}
+/* overrides css for mobile views up to 599px wide */
+/* END OF MOBILE OVERIDE STYLING */ 
+/* */
+/* Media Query Overide Tablet */
+/* Media Query Overide Tablet */
+@media only screen and (min-width:600px) and (max-width:1199px) 
+{
+ header{background-color: #F7EBE8}
+
+ nav.nav1{
+    overflow: hidden;
+    background-color:#F7EBE8;
+    font-size: 60%;
+    padding-left: 15%;
+ }  
+ 
+#gradient-bgd{
+    top: 50px;
+    left: 10px;
+    width: 100%;
+}
+
+.animation-left{
+    font-size: 22px;
+
+}
+
+.animation-middle{
+    font-size: 22px;
+    text-align: justify;
+}
+
+.animation-right{
+    font-size: 22px;
+    text-align: justify;
+}
+
+h2{
+    font-size: 24px;
+}
+
+#mindmap{
+    left: 30px;
+    top: 105px;
+    width: 100%;
+}
+
+.grid-container{
+    grid-template-columns: 30px 30px 30px;
+    gap:310px;
+    top: -420px;
+    left: -25px;
+}
+
+.grid-container >  div{
+    padding: 50px 0;
+    font-size: 16px;
+    width: 100px;
+    text-align: left;
+}
+
+.orange-bgd{
+    position: relative;
+    top: -400px;
+    background-color: #E07D53;
+    object-fit: cover;
+    padding: 30px;
+
+}
+
+.orange-bgd p{
+    font-size: 16px;
+    width: 75%;
+    margin-left: 70px;
+}
+
+.orange-bgd h4{
+    font-size: 24px;
+    width: 75%;
+    margin-left: 70px;
+}
+
+.interactive-presentation h4{
+    font-size: 26px;
+    text-align: center;
+    position: relative;
+    top: -380px;
+    
+}
+
+.grid-row{
+    grid-template-columns: auto;
+    padding: 30px;
+    gap: 10px;
+    top:-400px;
+}
+
+.grid-column{
+    background-color: #F7EBE8;
+    padding: 10px;
+    height: 450px;
+    text-align: left;
+}
+
+.grid-column h5{
+    font-size: 18px;
+    font-weight: bold;
+    color:#E07D53;
+    margin: 0px;
+}
+
+.grid-column h3{
+    font-size: 26px;
+    font-weight: bold;
+    width: 350px; 
+    color:#000;
+    margin:0px;
+}
+
+.grid-column p{
+    font-size: 20px;
+}
+img{
+    width: 100%;
+    height:auto;
+}
+
+table{
+    border-collapse: collapse; /* border collaspe inti a single border*/
+    width: 20%;
+}
+}
+ 
+/* overrides css for tablet/small desktop views between 600px and 
+1199px wide */
+/* END OF TABLET OVERIDE MAIN STYLING */

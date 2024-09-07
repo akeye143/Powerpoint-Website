@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<title>PowerPoint</title><!--will be displayed as the title in te tab of the page-->
+<link rel="icon" type="image/x-icon" href="images/LOGO.png"><!--adds a favicon to the tab of the webpage-->
+<link rel="stylesheet" href="styles/main1.css" /> <!-- link to website styling -->
+<meta name="description" content="PowerPoint Tips" /><!--description of the website -->
+<meta name="keywords" content="Teaching, Presentation, Students" /><!--used for serach engine-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--used to make the website responsive on all devices -->
+<!--[if lt IE 9]> <script src="scripts/html5shiv.js"> </script> <![endif] -->
+<!--
+ Author: Afsana Akhi 22232513
+ Organisation: Birmingham City University
+ Copyright: Copyright 2021
+-->
+</head>
+<body>
+    <div id="wrapper">
+        <header> 
+            <a href = "index1.html"><img id = "logo" src = "images/LOGO.png" alt = "Logo"></a>
+        </header>
+		<!-- naviagtion bar - hambruger menu is set and will be triggered once is the desired state-->
+		<div class="collapsible-menu">
+			<input type="checkbox" id="menu">
+			<label for="menu"></label>
+			<nav class = "nav1">
+				<ul><!--list of links that will be used to naviagte to the differnt pages on the website-->
+					<li><a href = "presentation.html"> Presentation</a></li>
+					<li><a href = "Animation.html"> Animation</a></li>
+					<li><a href = "contacts.html"> Contacts</a></li>
+					<li><a href = "references.html"> References</a></li>
+				</ul>
+			</nav> 
+		</div>
+        <section>
+			<div class="topSection">
+				<div id = "Globe">
+					<img src = "images/globe.png" alt="Globe"><!--images to be loaded - images/ used to locate the directory of the image-->
+				</div>
+					<h1>Teaching Made <br><span style = "color: #27347E;">Easy</span>.</h1><!--span used to colour just the word easy -->
+					<p>PowerPoint provides teachers and educators multiple toolkits to create professional, consistent and engaging  presentations.</p>
+			</div>
+			<!-- create two separate columns so i can design them in css-->
+			<div class = "row">
+				<div class = "column side">
+					<aside ><h4>WE ARE THE MOST COMMONLEY USED PRESENTATION SOFTWARE </h4> </aside>
+				</div>
+				<div class = "column main">
+					<img src = "images/people.png" alt = "Office workplace">
+					<div class = "stats">
+						<article>
+							<p>Teachers use PowerPoint everyday</p>
+							<h2>6+ Million </h2>
+							<p>On average to prepare a presentation</p>
+							<h2>2 Hours</h2>
+							<p>Of presentation software is owned by Microsoft </p>
+							<h2>95%</h2>
+						</article>
+					</div>
+				</div>
+			</div>
+			<div id = "middleSection">
+				<img src = "images/squiglybkgrnd.png" alt = "background design">
+			</div>
+			<!-- all container will be the same size - ensure consistincey through the website design-->
+			<div class = "grid-containers">
+				<div class = "section1">
+					<h5>PORTABLE</h5>
+					<p>Presentations can be re-used and easily updated.</p><br>
+					<p>It allows teachers and students to access and share your presentation from anywhere</p>
+				</div>
+				<div class = "section2">
+					<h5>MEDIA</h5>
+					<p>Supports all types of media files onto the presentation.</p><br>
+					<p>As well as that it provides the option to animate slides/media and create 
+					charts or graphs.</p>
+				</div>
+				<div class = "section3">
+					<h5>BUILT-IN THEMES</h5>
+					<p>Pre-made templates are  provided making the the design process easier and less time consuming.</p><br>
+					<p>Personalised themes can also be shared and
+					uploaded online for others.</p>
+				</div>
+			</div>
+			<div class = "bottomSection">
+				<br><h2>PowerPoint is <span style = "color: #E07D53;"> easy</span>, <span style = "color: #E07D53;">engaging</span> and <span style = "color: #E07D53;">effective.</span></h2>
+				<p>It is a powerful software tool used to deliver presentations at a professional level,  a surplus of teachers and educational centres have come out in support of using PowerPoint for their lesson plan.</p>
+				<p>Students have an average attention span of 10 minute by incorporating different visual options such as charts/graphs to represent data and creating fun activities such as quizzes keeps students engaged  and provide them with a better learning experience.</p>
+				<h5>READY TO LEARN HOW TO CREATE A GREAT PRESENTATION?</h5>
+				<a href = "presentation1.html" class = "button">Ready</a>
+			</div>
+        </section> <!--end of section -->
+        <footer> 
+			<div class = "position">
+				<hr>
+				<div class = "contacts-container">
+					<div class = "contacts">
+						<h3> Sign up for weekly presentation tips from our Powerpoint Team!</h3>
+						<form>
+							<label for = "emailAd"></label>
+							<input type = "email" id = "emailAd" name = "emailAd" placeholder="Email Address"><input type = "submit" class = "submitbutton" value = "submit">
+						</form>
+					</div>
+					<div class = "contacts"><!-- links to websites social media accounts-->
+						<div class = "contactsLink">
+							<h4>Get in contact with us</h4>
+							<ul>
+								<li><a href = "https://twitter.com/" target="blank">X</a></li>
+								<li><a href = "https://www.instagram.com/" target="blank">Instagram</a></li>
+								<li><a href = "https://www.facebook.com/" target="blank">Facebook</a></li>
+								<li><a href = "https://www.microsoft.com/" target="blank">Powerpoint@mail.com</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div><!-- small text that is found at the bottom of every website-->
+			<div class = smallText>
+				<div class = "text1">
+					<p>Terms & Conditions</p>
+				</div>
+				<div class = "text1">
+					<p>Privacy Policy</p>
+				</div>
+				<div class = "text1">
+					<p>© 2023 Powerpoint</p>
+				</div>
+                <div class = "text1">
+					<p>Afsana Akhi, Birmingham City University</p>
+				</div>
+		</footer>
+        </div> <!--end of wrapper-->
+        
+</body>
+</html>

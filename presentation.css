@@ -1,0 +1,1053 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+font-family:Arial, Helvetica, sans-serif; 
+background-color: #F7EBE8;}
+
+#wrapper{
+width: 100%; margin: 0 auto;
+}
+
+header{
+background-color: #F7EBE8; padding: 10px; 
+}
+
+#logo{
+float:left;
+height: 3%;
+width: 5%;
+top: 0;
+left: 0;
+}
+
+nav.nav1{
+overflow: hidden;
+background-color:#F7EBE8;
+font-size: 80%;
+padding-left: 50%;
+
+}
+
+nav.nav1 ul{
+list-style: none;
+width: 90%;
+padding : 5%;
+margin: 0;
+}
+
+nav.nav1 li{
+display: inline;
+border-right: 2px solid #F7EBE8;
+}
+
+nav.nav1 li:last-of-type {border-right: 0px;}
+
+nav.nav1 a{
+color: #27347E;
+text-align: center;
+text-decoration: none;
+padding: 25px 19px;
+font-size: 16px;
+transition-duration: 0.4s;
+}
+
+nav.nav1 a:hover{
+    box-shadow: 0 -5px 0px #1C2E67 inset,
+    500px 0 0 #f7e7e7 inset;
+    padding: 20px 19px 30px 19px;
+}
+
+input#menu, label {
+    display: none;
+    position: absolute;
+    right: 20px;
+}
+
+.topSection h1{
+    text-align: right;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #000000;
+    position: absolute;
+    width: 30%;
+    right: 12%;
+    top:20%;
+    clear:left;
+}
+
+.topSection p{
+    text-align: center;
+    font-size: 18px;
+    color:#000000;
+    position: absolute;
+    right:12%;
+    top:30%;
+    width:357px;
+    padding-top: 15px ;
+    clear:left;
+}
+
+#crown{
+    position:absolute;
+    top: 237px;
+    left: -92px;
+    width: 25%;
+    transform: rotate(-35deg);/*roates the imgage by -35 degrees - used to postion the crown to fit perfectly on top of the curated desktop image*/
+}
+.column{
+    float: left;
+    padding: 10px;
+}
+
+.desktop{
+    width: 75%;
+}
+
+.images{
+    width: 25%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+}
+
+.column.desktop1{
+    position:relative;
+    top: 300px;
+    left: 6%;
+}
+/*styling of the top part of the desktop*/
+.topPart{
+    border-radius: 25px 25px 0px 0px;
+    background-color: #FFFFFF;
+    box-shadow: inset 1px 1px #808080;/*adds a border around half of the div element*/
+    width:700px;
+    height:30px;
+}
+/*styling of the dot - buyilds the foundation of it*/
+.dot{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 10px;
+    display:inline-block;
+}
+/*colours the dot each to it corresponding colour*/
+.dot.blue{
+    background-color: #27347E;
+}
+
+.dot.orange{
+    background-color: #E07D53;
+}
+
+.dot.grey{
+    background-color: #d3d3d3;
+}
+/*styling of the main part of the desktop image/div*/
+
+.mainPart{
+    border-radius: 0px 0px 25px 25px;
+    background-color: #FFFFFF;
+    box-shadow: inset 1px 1px #808080;
+    width: 700px;
+    height: 420px;
+}
+
+h4.solid{
+    position: absolute;
+    font-size: 20px;
+    top: 40px;
+    left: 57px;
+    border-style: solid;
+    border-color: #E07D53;
+    padding: 10px;
+    padding-left: 223px;
+    padding-right: 224px;
+
+}
+
+p.solid{
+    position: absolute;
+    font-size: 18px;
+    top: 95px;
+    left: 57px;
+    border-style: none solid solid solid;/*applies a border around the text so whne displayed it looked like a powerpoint slide*/
+    border-color: #E07D53;
+    padding: 30px;
+    padding-left: 20px;
+    padding-right: 18px;
+    width: 600px
+
+}
+/*psotions the images and text in the second desktop to its rightful place*/
+#plane{
+    position: absolute;
+    top: 450px;
+    right: 350px;
+    transform: rotate(-22deg);
+    float: right;
+    width: 20%;
+    height: auto;
+}
+
+#planets{
+    position: absolute;
+    top: 550px;
+    right: 220px;
+    float:right;
+    width: 30%;
+    height: auto;
+}
+
+.column.desktop2{
+    position:relative;
+    top: 700px;
+    right: 6%;
+}
+
+#potions{
+    position: absolute;
+    top: 500px;
+    left: -150px;
+    width: 80%;
+}
+
+h4.heading{
+    position: absolute;
+    font-size: 20px;
+    left: 230px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;/* items to be set by each 3 on one row with the exact size of 200px*/
+    background-color: #FFFFFF;
+}
+
+.grid-item{
+    background-color: #FFFFFF;
+    font-size: 18px;
+    text-align: center;
+}
+
+#clock{
+    position: absolute;
+    top: 100px;
+    left: 120px;
+    width: 10%;
+    height:auto;
+}
+
+p.clock{
+    position: absolute;
+    font-size: 16px;
+    text-align: center;
+    width: 180px;
+    top: 160px;
+    left: 65px;
+}
+
+#star{
+    position: absolute;
+    top: 100px;
+    left: 330px;
+    width:10%
+}
+
+p.star{
+    position: absolute;
+    font-size: 16px;
+    text-align: center;
+    width: 180px;
+    top: 160px;
+    left: 270px
+}
+
+#reusable{
+    position: absolute;
+    top: 100px;
+    right: 115px;
+    width:10%;
+    height: auto;
+}
+
+p.reusable{
+    position: absolute;
+    font-size: 16px;
+    text-align: center;
+    width: 180px;
+    top: 160px;
+    right: 50px;
+}
+
+#professional{
+    position: absolute;
+    top:260px;
+    left: 120px;
+    width: 10%;
+    height: auto;
+}
+
+p.professional{
+    position: absolute;
+    font-size: 16px;
+    text-align: center;
+    width: 180px;
+    top: 320px;
+    left: 70px;
+}
+
+#puzzle{
+    position: absolute;
+    top: 260px;
+    left:330px;
+    width: 9%;
+    height: auto;
+}
+
+p.puzzle{
+    position: absolute;
+    font-size: 16px;
+    text-align: center;
+    width: 180px;
+    top: 320px;
+    left:280px;
+}
+
+#share{
+    position: absolute;
+    top: 270px;
+    right: 90px;
+    width: 15%;
+    height:auto;
+}
+
+p.share{
+    position: absolute;
+    font-size: 16px;
+    text-align: center;
+    width: 180px;
+    top: 320px;
+    right: 60px;
+}
+
+h2.gallery-heading{
+    position: absolute;
+    top: 1360px;
+    left: 340px;
+    font-size: 32px;
+    text-align: center;
+    width: 55%;
+}
+
+.gallery{
+    position: relative;
+    top: 890px;
+    left: 160px;
+    padding: 0 6px;
+    float: left;
+    width: 26%;
+}
+/*styling the tab border for the image in the gallery*/
+.gallery-tab{
+    border: 2px solid #d3d3d3;
+}
+
+.gallery-tab:hover{
+    border: 1px solid #000000;
+}
+
+.gallery-tab img{
+    width: 100%;
+    height: auto;
+}
+
+.image-desc{
+    padding: 15px;
+    text-align: center;
+}
+
+h2.bottom{
+    position: absolute;
+    top: 2060px;
+    left: 400px;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 3px;;
+    color: #DA4747;
+    width: 700px;
+}
+/*styling for the div elemnts to store the likes and dislikes of the presentations*/
+.grid-bubble-container{
+    display: inline-grid;
+    grid-template-columns: 350px 350px;
+    grid-gap: 150px;
+    padding: 50px;
+    position: relative;
+    top: 1010px;
+    left: -140px;
+    background-color:#F7EBE8;
+}
+
+.grid-bubble-container > div {
+    background-color:#FFFFFF;
+    text-align: center;
+    border-radius: 8%;
+    padding: 30px 0;
+    height: 520px;
+    box-shadow: 10px 10px #E07D53;
+    text-transform: capitalize;
+}
+
+.align{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.switch-image img {
+    max-width:20%;
+    height: auto;
+}
+
+.switch-image {
+    position: relative;
+    top:3px;
+    left: 100px;
+    flex-basis: 40%;
+}
+
+.text {
+    position: relative;
+    top: -30px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 200px;
+    padding-left: 50px;
+
+}
+
+footer{
+    position: relative;
+    bottom:-1000px;
+    left:0;
+    width: 100%;
+    background-color: #F7EBE8;
+    }
+    
+.position{
+    padding-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;   
+}
+
+.contacts-container::after{
+    content:"";
+    display:table;
+    clear: both;
+        
+    }
+
+.contacts{
+    float: left;
+    width: 50%;
+    padding: 20px;
+    }
+
+h3{
+color: #011657;
+width: 60%;
+padding-top: 20px;
+}
+
+input[type=email] {
+    width: 40%;
+    padding: 12px 15px;
+    background-color: #F7EBE8;
+    opacity: 1;
+    border-color: #FFFFFF;
+}
+
+input[type=submit]{
+    border: 2px solid #F7EBE8;
+    background-color:#FFFFFF;
+    opacity: 1;
+    text-align: center;
+    font-size: 14px;
+    padding: 13px;
+    width: 80px;
+}
+
+input[type=submit]:hover{
+    background-color:#d3d3d3;
+    border-color: #808080;
+}
+
+.contactsLink h4{
+    padding-top: 20px;
+    font-size: 18px;
+    margin-left: 41px;
+    color: #011657;
+}
+
+.contactsLink ul{
+    list-style: none;
+}
+
+.contactsLink li{
+    padding-top: 20px;
+    padding: 10px;
+}
+
+.contactsLink a{
+    color: #011657;
+    text-decoration: none; 
+    font-weight: bold; 
+    font-size: 16px; 
+}
+
+.contactsLink a:hover{
+    color: #E07D53;
+    text-decoration: underline;
+}
+
+.smallText{
+    display:flex;
+    margin-left: 70%;
+}
+
+.smallText > div{
+    color: #808080;
+    font-size: 12px;
+    font-weight: bold; 
+    padding: 10px;
+}
+
+@media only screen and (max-width:599px)
+{
+ header {
+    background-color: #F7EBE8;
+} 
+  
+
+#logo{
+    width: 15%;
+    }
+
+nav.nav1 li { 
+    width:100%; display:block; border-right: 0; min-height:44px;
+}
+
+.collapsible-menu {
+    background-color: #F7EBE8;
+    padding: 0px 30px;
+   }
+   
+.collapsible-menu label {
+    font-size: 120%;
+    display: block;
+    cursor: pointer;
+    background: url(../graphics/menu.png) no-repeat left center;
+    padding: 10px 0 10px 50px;
+}
+input:checked +label {
+    background-image: url(../graphics/close.png);
+
+}
+nav.nav1 {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 0 0 50px;
+}
+/* Toggle Effect */
+input:checked ~ label {
+    background-image: url(../graphics/close.png);
+}
+input:checked ~ nav.nav1 {
+    max-height: 100%;
+}
+    
+nav.nav1 a:hover{
+    box-shadow: 0 -5px 0px #1C2E67 inset,
+    500px 0 0 #f7e7e7 inset;
+    padding: 15px 150px 15px 150px;
+}
+
+.topSection h1{
+    font-size: 24px;
+    top: 120px;
+    width: 350px;
+}
+
+.topSection p{
+    font-size: 16px;
+    top: 180px;
+}
+
+#crown{
+    top: 280px;
+    left: -13%;
+    width: 45%;
+}
+
+.topPart{
+    width:350px;
+    height:30px;
+}
+
+.mainPart{
+    width: 350px;
+    height: 600px;
+}
+
+h4.solid{
+    font-size: 18px;
+    top: 40px;
+    left:36px;
+    padding: 10px;
+    padding-left: 80px;
+    padding-right: 82px;
+
+}
+
+p.solid{
+    font-size: 17px;
+    top: 88px;
+    left: 36px;
+    padding: 30px;
+    padding-left: 20px;
+    padding-right: 10px;
+    width: 300px
+
+}
+
+
+#plane{
+    top: 310px;
+    right: 180px;
+    transform: rotate(-40deg);
+    width: 20%;
+}
+
+#planets{
+    top: 900px;
+    right: 100px;
+    float:right;
+    width: 60%;
+    height: auto;
+}
+
+#potions{
+    display: none;;
+}
+
+.column.desktop2{
+    position:relative;
+    top: 350px;
+    left: 6%;
+}
+
+h4.heading{
+    position: absolute;
+    font-size: 18px;
+    width: 350px;
+    left: 60px;
+}
+
+.grid-container{
+    display: inline-grid;
+    grid-template-columns: 150px 150px;
+    background-color: #FFFFFF;
+}
+
+.grid-item{
+    background-color: #FFFFFF;
+    font-size: 16px;
+    text-align: center;
+}
+
+#clock{
+    top: 100px;
+    left: 70px;
+    width: 20%;
+}
+
+p.clock{
+    width: 140px;
+    top: 160px;
+    left: 30px;
+}
+
+#star{
+    top: 100px;
+    left: 230px;
+    width: 20%;
+}
+
+p.star{
+    width: 140px;
+    top: 160px;
+    left: 190px
+}
+
+#reusable{
+    top: 270px;
+    left: 70px;
+    width:17%;
+}
+
+p.reusable{
+    width: 160px;
+    top: 325px;
+    left: 25px;
+}
+
+#professional{
+    top:270px;
+    left: 230px;
+    width: 20%;
+}
+
+p.professional{
+    width: 160px;
+    top: 325px;
+    left: 200px;
+}
+
+#puzzle{
+    top: 440px;
+    left:75px;
+    width: 15%;
+}
+
+p.puzzle{
+    width: 140px;
+    top: 490px;
+    left: 35px;
+}
+
+#share{
+    top: 440px;
+    right: 60px;
+    width: 25%;
+}
+
+p.share{
+    width: 160px;
+    top: 490px;
+    right: 20px;
+}
+
+h2.gallery-heading{
+    top: 1760px;
+    left: 70px;
+    font-size: 22px;
+    width: 300px;
+}
+.gallery {
+    width: 85%;
+    left: 35px;
+    top: 480px;
+}
+
+h2.bottom{
+    position: absolute;
+    top: 3460px;
+    left: 25px;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 3px;;
+    color: #DA4747;
+    width: 400px;
+}
+
+.grid-bubble-container{
+    grid-template-columns: 350px;
+    grid-gap: 50px;
+    padding: 30px;
+    top: 680px;
+    left: 7px;
+}
+
+.position{
+    padding-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;   
+}
+
+.contacts-container::after{
+    content:"";
+    display:table;
+    clear: both;
+     
+ }
+
+.contacts{
+    width: 450px;
+  }
+
+ h3{
+    font-size: 20px;
+    width: 80%;
+}
+
+input[type=email] {
+    width: 40%;
+    padding: 12px 15px;
+    background-color: #F7EBE8;
+    opacity: 1;
+    border-color: #FFFFFF;
+}
+
+.contactsLink h4{
+    padding-top: 10px;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+
+.smallText{
+    display:flex;
+    margin-left: 10%;
+}
+
+footer{
+    bottom:-700px;
+    }
+}
+/* overrides css for mobile views up to 599px wide */
+/* END OF MOBILE OVERIDE STYLING */ 
+/* */
+/* Media Query Overide Tablet */
+/* Media Query Overide Tablet */
+@media only screen and (min-width:600px) and (max-width:1199px) 
+{
+ header{background-color: #F7EBE8;}
+
+ nav.nav1{
+    overflow: hidden;
+    background-color:#F7EBE8;
+    font-size: 60%;
+    padding-left: 15%;
+ }  
+.topSection h1{
+    font-size: 28px;
+    top: 120px;
+    width: 400px;
+}
+
+.topSection p{
+    font-size: 16px;
+    top: 200px;
+}
+
+#crown{
+    top: 310px;
+    left: -5.5%;
+    width: 25%;
+}
+
+.topPart{
+    width:550px;
+    height:30px;
+}
+
+.mainPart{
+    width: 550px;
+    height: 480px;
+}
+
+h4.solid{
+    position: absolute;
+    font-size: 20px;
+    top: 35px;
+    left: 55px;
+    padding-left: 150px;
+    padding-right: 147px;
+
+}
+
+p.solid{
+    position: absolute;
+    font-size: 17px;
+    top: 88px;
+    left: 55px;
+    border-style: none solid solid solid;
+    border-color: #E07D53;
+    padding: 20px;
+    padding-left: 34px;
+    padding-right: 39px;
+    width: 450px
+
+}
+
+#plane{
+    top: 330px;
+    right: 250px;
+    transform: rotate(-40deg);
+    width: 15%;
+}
+
+#planets{
+    top: 690px;
+    right: 70px;
+    float:right;
+    width: 35%;
+    height: auto;
+}
+
+.column.desktop2{
+    position:relative;
+    float: left;
+    top: 320px;
+    left: 20%;
+}
+
+#potions{
+    position: absolute;
+    top: 880px;
+    left: -230px;
+    width: 70%;
+}
+
+
+h4.heading{
+    position: absolute;
+    font-size: 20px;
+    width: 350px;
+    left: 150px;
+}
+
+.grid-container{
+    display: inline-grid;
+    grid-template-columns: 150px 150px 150px;
+    background-color: #FFFFFF;
+}
+
+.grid-item{
+    background-color: #FFFFFF;
+    font-size: 16px;
+    text-align: center;
+}
+
+#clock{
+    top: 120px;
+    left: 70px;
+    width: 15%;
+}
+
+p.clock{
+    width: 160px;
+    top: 190px;
+    left: 35px;
+}
+
+#star{
+    top: 120px;
+    left: 265px;
+    width: 15%;
+}
+
+p.star{
+    width: 150px;
+    top: 190px;
+    left: 230px
+}
+
+#reusable{
+    top: 130px;
+    right: 75px;
+    width:12%;
+}
+
+p.reusable{
+    width: 160px;
+    top: 190px;
+    right: 25px;
+}
+
+#professional{
+    top:310px;
+    left: 80px;
+    width: 13%;
+}
+
+p.professional{
+    width: 160px;
+    top: 365px;
+    left: 40px;
+}
+
+#puzzle{
+    top: 310px;
+    left:275px;
+    width: 10%;
+}
+
+p.puzzle{
+    width: 170px;
+    top: 360px;
+    left: 225px;
+}
+
+#share{
+    top: 310px;
+    right: 40px;
+    width: 20%;
+}
+
+p.share{
+    width: 140px;
+    top: 360px;
+    right: 20px;
+}
+
+
+h2.gallery-heading{
+    top: 1540px;
+    left: 220px;
+    font-size: 28px;
+    width: 600px;
+}
+
+h2.bottom{
+    position: absolute;
+    top: 2400px;
+    left: 295px;
+    font-size: 26px;
+    text-align: center;
+    letter-spacing: 3px;;
+    color: #DA4747;
+    width: 500px;
+}
+
+.grid-bubble-container{
+    grid-template-columns: 350px 350px;
+    grid-gap: 50px;
+    padding: 30px;
+    top: 1150px;
+    left: 157px;
+}
+
+ .gallery {
+    width: 20%;
+    margin: 6px 0;
+    left: -290px;
+    top: 990px;
+  }
+
+  footer{
+    bottom:-1200px;
+    }
+    
+}
+ 
+/* overrides css for tablet/small desktop views between 600px and 
+1199px wide */
+/* END OF TABLET OVERIDE MAIN STYLING */
